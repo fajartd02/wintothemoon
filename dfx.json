@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "wintothemoon_backend": {
+      "main": "src/wintothemoon_backend/main.mo",
+      "type": "motoko"
+    },
+    "wintothemoon_frontend": {
+      "dependencies": [
+        "wintothemoon_backend"
+      ],
+      "source": [
+        "src/wintothemoon_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "wintothemoon_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
