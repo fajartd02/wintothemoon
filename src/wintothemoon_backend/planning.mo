@@ -22,6 +22,7 @@ actor {
         nftList : [NFT];
         cost : Nat; // amount of tokens to be consumed for operational purposes
         description : Text;
+        executed : Bool;
     };
 
     private let userWillMap = HashMap.HashMap<Principal, HashMap.HashMap<Principal, WillPlan>>(DEFAULT_CAP, Principal.equal, Principal.hash);
@@ -39,7 +40,7 @@ actor {
         };
     };
 
-    public shared ({ caller }) func addPlan(target : Principal, plan : WillPlan) : async Text {
+    public shared ({ caller }) func upsertPlan(target : Principal, plan : WillPlan) : async Text {
         let currentWill = switch (userWillMap.get(caller)) {
             case (null) {
                 HashMap.HashMap<Principal, WillPlan>(DEFAULT_CAP, Principal.equal, Principal.hash);
