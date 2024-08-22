@@ -24,7 +24,7 @@ actor class NFT(name : Text, owner : Principal, imageContent : [Nat8]) = this {
     public query func getOwner() : async Principal {
         return owner;
     };
-    public query func getAsset() : async [Nat8] {
+    public query func getImages() : async [Nat8] {
         return imageBytes;
     };
 };
