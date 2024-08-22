@@ -54,7 +54,7 @@ actor {
     };
 
     // Function to retrieve all keys from the userWillMap
-    public query func getAllUserKeys() : async [Principal] {
+    public query func getAllUserAlreadyWillPlan() : async [Principal] {
         return Iter.toArray(userWillMap.keys());
     };
 
