@@ -15,8 +15,8 @@
       "main": "src/wadt_backend/wadt_token.mo",
       "type": "motoko"
     },
-    "planning_contract": {
-      "main": "src/wadt_backend/planning.mo",
+    "operational_contract": {
+      "main": "src/wadt_backend/operational.mo",
       "type": "motoko"
     },
     "wadt_frontend": {
