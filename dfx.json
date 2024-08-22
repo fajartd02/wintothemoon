@@ -4,9 +4,14 @@
       "main": "src/wintothemoon_backend/wadt_token.mo",
       "type": "motoko"
     },
+    "planning_contract": {
+      "main": "src/wintothemoon_backend/planning.mo",
+      "type": "motoko"
+    },
     "wintothemoon_frontend": {
       "dependencies": [
-        "wadt_token"
+        "wadt_token",
+        "planning_contract"
       ],
       "source": [
         "src/wintothemoon_frontend/dist"
