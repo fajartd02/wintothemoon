@@ -22,7 +22,7 @@
     "wadt_frontend": {
       "dependencies": [
         "wadt_token_contract",
-        "planning_contract"
+        "operational_contract"
       ],
       "source": [
         "src/wadt_frontend/dist"
