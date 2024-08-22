@@ -1,23 +1,34 @@
 {
   "canisters": {
-    "wadt_token": {
-      "main": "src/wintothemoon_backend/wadt_token.mo",
+    "internet_identity": {
+      "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+      "frontend": {},
+      "remote": {
+        "id": {
+          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+        }
+      },
+      "type": "custom",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz"
+    },
+    "wadt_token_contract": {
+      "main": "src/wadt_backend/wadt_token.mo",
       "type": "motoko"
     },
     "planning_contract": {
-      "main": "src/wintothemoon_backend/planning.mo",
+      "main": "src/wadt_backend/planning.mo",
       "type": "motoko"
     },
-    "wintothemoon_frontend": {
+    "wadt_frontend": {
       "dependencies": [
-        "wadt_token",
+        "wadt_token_contract",
         "planning_contract"
       ],
       "source": [
-        "src/wintothemoon_frontend/dist"
+        "src/wadt_frontend/dist"
       ],
       "type": "assets",
-      "workspace": "wintothemoon_frontend"
+      "workspace": "wadt_frontend"
     }
   },
   "defaults": {

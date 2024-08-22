@@ -1,10 +1,10 @@
 {
-  "name": "wintothemoon_frontend",
+  "name": "wadt_frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "setup": "npm i && dfx canister create wintothemoon_backend && dfx generate wintothemoon_backend && dfx deploy",
+    "setup": "npm i && dfx canister create wadt_backend && dfx generate wadt_backend && dfx deploy",
     "start": "vite --port 3000",
     "prebuild": "dfx generate",
     "build": "tsc && vite build",

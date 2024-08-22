@@ -4,7 +4,7 @@ import Nat "mo:base/Nat";
 import Text "mo:base/Text";
 import Iter "mo:base/Iter";
 
-actor {
+actor Planning {
 
     private let DEFAULT_CAP = 10;
 
