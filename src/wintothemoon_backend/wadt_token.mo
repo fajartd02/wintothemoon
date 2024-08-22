@@ -4,8 +4,7 @@ import Text "mo:base/Text";
 import HashMap "mo:base/HashMap";
 import Iter "mo:base/Iter";
 
-actor WADToken {
-
+actor WADTToken {
   type CustomResponse = {
     message : Text;
     code : Nat;

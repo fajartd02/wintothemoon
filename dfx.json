@@ -1,12 +1,12 @@
 {
   "canisters": {
-    "wintothemoon_backend": {
-      "main": "src/wintothemoon_backend/main.mo",
+    "wadt_token": {
+      "main": "src/wintothemoon_backend/wadt_token.mo",
       "type": "motoko"
     },
     "wintothemoon_frontend": {
       "dependencies": [
-        "wintothemoon_backend"
+        "wadt_token"
       ],
       "source": [
         "src/wintothemoon_frontend/dist"
