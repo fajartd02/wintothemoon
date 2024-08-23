@@ -40,7 +40,9 @@ const Home = ({ setIsAuthenticated }) => {
 
     const distribute = async () => {
         const principal = await getPrincipal();
-        await wadt_token_contract.disbtribute(principal, parseFloat(5));
+        console.log(principal);
+        const response = await wadt_token_contract.disbtribute(principal, parseFloat(5));
+        console.log(response);
         window.location.reload();
     }
 
