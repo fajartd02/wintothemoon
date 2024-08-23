@@ -23,6 +23,7 @@ const Navbar = ({ setIsAuthenticated }) => {
             position="fixed"
             top={0}
             left={0}
+            zIndex={10}
             bg="light"
             boxShadow="lg"
         >
