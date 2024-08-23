@@ -10,15 +10,15 @@ These scenarios paint a clear picture of why a modern solution is urgently neede
 
 ## How it Works <img src="https://media.giphy.com/media/Uq4ucFb5FLDStK6CUk/giphy.gif?cid=ecf05e479umgl3dn7uu9l5is8svghcik1kn0bso21b98qs8a&ep=v1_stickers_search&rid=giphy.gif&ct=ts" width="16px">
 Imagine a future where your digital legacy is seamlessly managed, with every detail executed exactly as you envisioned. Here’s how Will Autonomous Decentralization brings this vision to life:<br><br>
-Step 1: Crafting Your Legacy<br>
+### Step 1: Crafting Your Legacy
 Picture yourself sitting comfortably at your computer, carefully planning your digital legacy. You log into our intuitive platform and begin crafting your digital will. With a few clicks, you list all your assets—cryptocurrencies, NFTs, important documents and specify who should receive each item. The platform guides you through each step, making the process simple and straightforward. You add personal messages and instructions, ensuring that every detail reflects your wishes. For your real-world assets, such as cars, motorcycles, and houses, our platform allows you to create a traditional testament. This testament can be handwritten or typed and can even be turned into an NFT for added security and permanence.<br><br>
-Step 2: Securing Your Keys<br>
+### Securing Your Keys
 Once your will is drafted, the next step is safeguarding your digital assets. Imagine placing the key to a secret vault into several secure safes, each guarded by a trusted friend. Similarly, your decryption keys are split into multiple parts and stored with several trusted trustees. This way, no single person has access to the complete key, ensuring that your assets are protected from unauthorized access and tampering.<br><br>
-Step 3: Waiting for the Right Moment<br>
+### Step 3: Waiting for the Right Moment
 Life goes on, and your assets remain secure. The platform continuously monitors your account, ready to spring into action if needed. Imagine your digital will as a well-oiled machine, patiently waiting for the signal to start. The system is programmed to detect when certain conditions are met—such as verifying your death through secure methods or evidence from your trusted trustees.<br><br>
-Step 4: Automatic Execution<br>
+### Step 4: Automatic Execution
 When the time comes, and the system verifies that you are no longer with us, the magic happens. Your digital will is activated by smart contracts, like a conductor cueing an orchestra. The contracts automatically distribute your assets according to your carefully laid-out plans. Your cryptocurrencies are transferred, NFTs are sent to the designated recipients, and personal messages are delivered. For your real-world assets, the traditional testament ensures they are distributed according to your wishes, with the added security of being stored as an NFT if desired. Everything unfolds exactly as you intended, with no delays or disputes.<br><br>
-Step 5: Ensuring Transparency and Peace of Mind<br>
+### Ensuring Transparency and Peace of Mind
 Throughout this process, every action is recorded on the blockchain, creating a transparent and immutable record. Imagine a crystal-clear window into the process, where every beneficiary can see that the will is being executed fairly and as promised. This transparency provides peace of mind, knowing that your legacy is in good hands and your wishes are being honored without compromise.<br><br>
 With Will Autonomous Decentralization, your digital and real-world legacies are managed with precision and care, ensuring that your assets are distributed exactly as you intended, seamlessly and securely.
 
