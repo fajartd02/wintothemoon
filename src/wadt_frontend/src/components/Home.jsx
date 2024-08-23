@@ -5,6 +5,8 @@ import { Box, Button, Grid, GridItem, HStack, Icon, Image, Text, useDisclosure, 
 import { FaClock, FaDollarSign, FaIdCard, FaPlus, FaUserSecret } from "react-icons/fa";
 import Navbar from "./Layout/Navbar";
 import TopUpModal from "./Modals/TopUpModal";
+import DigitalAssets from "./DigitalAssets";
+import TraditionalTestament from "./TraditionalTestament";
 
 const Home = ({ setIsAuthenticated }) => {
     const [principalId, setPrincipalId] = useState('');
@@ -134,6 +136,8 @@ const Home = ({ setIsAuthenticated }) => {
                             </VStack>
                         </GridItem>
                     </Grid>
+                    <DigitalAssets />
+                    <TraditionalTestament />
                 </Box>
             </VStack>
         </>
