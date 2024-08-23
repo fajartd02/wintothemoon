@@ -27,6 +27,7 @@ const TopUpModal = ({ isOpen, onClose }) => {
         const principal = await getPrincipal();
         const { value } = input;
         await wadt_token_contract.topUp(principal, parseFloat(value));
+        window.location.reload();
     };
 
     return (
