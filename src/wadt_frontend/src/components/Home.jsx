@@ -1,7 +1,7 @@
 import { AuthClient } from "@dfinity/auth-client";
 import { wadt_token_contract } from "../../../declarations/wadt_token_contract";
 import { useEffect, useState } from "react";
-import { Box, Button, Grid, GridItem, HStack, Icon, Image, Text, useDisclosure, VStack } from "@chakra-ui/react";
+import { Box, Button, Flex, Grid, GridItem, HStack, Icon, Image, Tag, Text, useDisclosure, VStack } from "@chakra-ui/react";
 import { FaClock, FaDollarSign, FaIdCard, FaPlus, FaUserSecret } from "react-icons/fa";
 import Navbar from "./Layout/Navbar";
 import TopUpModal from "./Modals/TopUpModal";
@@ -110,7 +110,21 @@ const Home = ({ setIsAuthenticated }) => {
                     <Grid templateColumns="repeat(3, 1fr)" gap={5} w="100%">
                         <GridItem>
                             <VStack alignItems="start" h={150} p={5} bg="light" borderRadius={10} boxShadow="md">
-                                <Text fontSize={32} fontWeight="bold">Distribute</Text>
+                                <Flex alignItems="center">
+                                    <Text fontSize={32} fontWeight="bold">
+                                        Distribute
+                                    </Text>
+                                    <Tag
+                                        size="sm"
+                                        variant="solid"
+                                        colorScheme="gray"
+                                        ml={3}
+                                        bg="warning"
+                                        color="light"
+                                    >
+                                        COST FEE 5 WADT
+                                    </Tag>
+                                </Flex>
                                 <Button
                                     colorScheme="gray"
                                     bg="primary"
