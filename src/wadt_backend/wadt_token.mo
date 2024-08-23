@@ -14,7 +14,6 @@ actor WADTToken {
     symbol : Text;
     circulatingSupplyAmount : Float;
   };
-  // var owner : Principal = Principal.fromText("igjqa-zhtmo-qhppn-eh7lt-5viq5-4e5qj-lhl7n-qd2fz-2yzx2-oczyc-tqe");
 
   let symbol : Text = "WADT"; // Stands for Will Autonomous Decentralized Token
   private var usersBalance = HashMap.HashMap<Principal, Float>(1, Principal.equal, Principal.hash); // Track User Token
@@ -66,6 +65,26 @@ actor WADTToken {
 
     return { message = "Success!"; code = 200 };
 
+  };
+
+  public func disbtribute(principalId : Principal, amount : Float) : async CustomResponse {
+    var owner : Principal = Principal.fromText("igjqa-zhtmo-qhppn-eh7lt-5viq5-4e5qj-lhl7n-qd2fz-2yzx2-oczyc-tqe");
+    let ownerAmount = await getBalance(principalId);
+
+    if (ownerAmount > amount) {
+
+      let currentOwnerAmount : Float = ownerAmount - amount;
+      usersBalance.put(principalId, currentOwnerAmount);
+
+      // input to owner
+      let destinationUserBalance = await getBalance(owner);
+      let newDestinationUserBalance = destinationUserBalance + amount;
+      usersBalance.put(owner, newDestinationUserBalance);
+
+      return { message = "Success Distribute"; code = 200 };
+    } else {
+      return { message = "Not enough funds!"; code = 400 };
+    };
   };
 
   public func reset() : async CustomResponse {
