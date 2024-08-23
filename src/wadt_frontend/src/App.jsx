@@ -21,7 +21,7 @@ const App = () => {
     }, []);
 
     return (
-        <Center h="100vh" bgGradient="linear(to-br, #D8B8C0, #F5F5F5)">
+        <Center minH="100vh" bgGradient="linear(to-br, #D8B8C0, #F5F5F5)">
             {isLoading ? (
                 <Spinner />
             ) : (
