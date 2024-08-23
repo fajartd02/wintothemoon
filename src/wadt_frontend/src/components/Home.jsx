@@ -38,6 +38,12 @@ const Home = ({ setIsAuthenticated }) => {
         setSymbol(symbol);
     };
 
+    const distribute = async () => {
+        const principal = await getPrincipal();
+        await wadt_token_contract.disbtribute(principal, parseFloat(5));
+        window.location.reload();
+    }
+
     useEffect(() => {
         getPrincipalId();
         getBalance();
@@ -112,6 +118,7 @@ const Home = ({ setIsAuthenticated }) => {
                                     _hover={{
                                         bg: '#660016'
                                     }}
+                                    onClick={distribute}
                                 >
                                     Execute Will Now
                                 </Button>
