@@ -9,7 +9,7 @@ const Login = ({ setIsAuthenticated }) => {
         if (process.env.DFX_NETWORK === "local") {
             identityURL = `http://${process.env.CANISTER_ID_INTERNET_IDENTITY}.localhost:4943`;
         } else if (process.env.DFX_NETWORK === "ic") {
-            identityURL = `https://${process.env.CANISTER_ID_INTERNET_IDENTITY}.ic0.app`;
+            identityURL = 'https://identity.internetcomputer.org/';
         } else {
             identityURL = `https://${process.env.CANISTER_ID_INTERNET_IDENTITY}.dfinity.network`;
         }
