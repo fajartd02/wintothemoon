@@ -1,5 +1,6 @@
 import { AuthClient } from "@dfinity/auth-client";
-import { Button, Grid, GridItem, Text, VStack } from "@chakra-ui/react";
+import { Box, Button, Grid, GridItem, Image, Text, VStack } from "@chakra-ui/react";
+import { FaArrowRight } from "react-icons/fa";
 
 const Login = ({ setIsAuthenticated }) => {
     const login = async () => {
@@ -24,11 +25,42 @@ const Login = ({ setIsAuthenticated }) => {
     };
 
     return (
-        <Grid templateColumns="repeat(2, 1fr)" p={20}>
+        <Grid templateColumns="repeat(2, 1fr)" h="100vh" gap={10} px={24}>
             <GridItem>
-                <VStack spacing={5} alignItems="start">
-                    <Text fontSize={64}>Will Autonomous Decentralization</Text>
-                    <Button colorScheme="gray" onClick={login}>Login</Button>
+                <VStack justifyContent="center" h="100vh">
+                    <Image
+                        src="/images/locker-dynamic-color.png"
+                        alt="Locker"
+                    />
+                </VStack>
+            </GridItem>
+            <GridItem>
+                <VStack spacing={5} alignItems="start" justifyContent="center" h="100%">
+                    <Text fontSize={64} fontWeight="bold" color="black" lineHeight={1}>Automate Your</Text>
+                    <Text fontSize={64} fontWeight="extrabold" color="primary" lineHeight={1}>Legacy</Text>
+                    <Text mt={5} fontSize={24} color="black">
+                        Empowering{" "}
+                        <Box as="span" fontWeight="bold">secure</Box>
+                        {" "}and{" "}
+                        <Box as="span" fontWeight="bold">autonomous</Box>
+                        {" "}will execution
+                    </Text>
+                    <Button
+                        colorScheme="gray"
+                        w={175}
+                        h={14}
+                        bg="primary"
+                        color="light"
+                        fontSize={18}
+                        borderRadius={20}
+                        rightIcon={<FaArrowRight />}
+                        onClick={login}
+                        _hover={{
+                            bg: '#660016'
+                        }}
+                    >
+                        Get Started
+                    </Button>
                 </VStack>
             </GridItem>
         </Grid>
