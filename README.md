@@ -36,7 +36,7 @@ Fully on-chain dApps
   - Multi-canister application
   - Planning Heritage Distribution Assets
   - Distribution Token & NFT
-  -ckBTC Integration 
+  - ckBTC Integration 
 
 ## Tech Details <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTM0dWp1NTluN21tOXR4cHRkdDVudnQ0enJlc3Flbjl0YmE3bTU2cyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/fdhTljqlxpUVXU9H9s/giphy.gif" width="40px">
 ![](.github/architecture.jpeg) <br>
